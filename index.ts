@@ -12,5 +12,6 @@ moto.acelerar();
 
 let concessionaria = new Concessionaria("São Paulo", [carro]);
 
-console.log(moto, carro);
+console.log(carro);
+console.log(moto);
 console.log(concessionaria.fornecerHorarioFuncionamento());
