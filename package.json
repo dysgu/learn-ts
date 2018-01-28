@@ -1,0 +1,26 @@
+{
+  "name": "learn-ts",
+  "version": "1.0.0",
+  "description": "learn-ts is a simple repository to keep my study files while I keep learning.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -w",
+    "intro": "node dist/index",
+    "interface": "node dist/try-interface",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftonato/learn-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts"
+  ],
+  "author": "Ademílson F. Tonato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ftonato/learn-ts/issues"
+  },
+  "homepage": "https://github.com/ftonato/learn-ts#readme"
+}
