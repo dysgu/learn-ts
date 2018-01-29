@@ -1,7 +1,7 @@
-import { DaoI } from "./daoInterface";
+import { DaoI } from "./daoI";
 
 export class Dao<T> implements DaoI<T> {
-  table: string = "tbl_pessoa";
+  table: string = "";
 
   insert(object: T): boolean {
     console.log("Method insert");

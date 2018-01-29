@@ -1,30 +1,34 @@
 import { Dao } from "./dao";
-import { DaoI } from "./daoInterface";
-import Concessionaria from "./concessionaria";
-import Pessoa from "./pessoa";
-import Moto from "./moto";
-import Carro from "./carro";
+import { DaoI } from "./daoI";
+import Dealership from "./dealership";
+import Person from "./person";
+import Motorcycle from "./motorcycle";
+import Car from "./car";
 
-const daoConcessionaria: Dao<Concessionaria> = new Dao<Concessionaria>();
-let concessionaria = new Concessionaria("", []);
+const daoDealership: Dao<Dealership> = new Dao<Dealership>();
+let dealership = new Dealership("", []);
 
 console.log(
-  "== Concessionaria:",
-  daoConcessionaria.insert(concessionaria),
-  daoConcessionaria.update(concessionaria)
+  "== Dealership:",
+  daoDealership.insert(dealership),
+  daoDealership.update(dealership)
 );
 
-const daoPessoa: Dao<Pessoa> = new Dao<Pessoa>();
-let pessoa = new Pessoa("@ftonato", "Mustang");
+const daoPerson: Dao<Person> = new Dao<Person>();
+let person = new Person("@ftonato", "Mustang");
 
-console.log("== Pessoa:", daoPessoa.insert(pessoa), daoPessoa.update(pessoa));
+console.log("== Person:", daoPerson.insert(person), daoPerson.update(person));
 
-const daoMoto: Dao<Moto> = new Dao<Moto>();
-let moto = new Moto();
+const daoMotorcycle: Dao<Motorcycle> = new Dao<Motorcycle>();
+let motorcycle = new Motorcycle();
 
-console.log("== Moto:", daoMoto.insert(moto), daoMoto.update(moto));
+console.log(
+  "== Motorcycle:",
+  daoMotorcycle.insert(motorcycle),
+  daoMotorcycle.update(motorcycle)
+);
 
-const daoCarro: Dao<Carro> = new Dao<Carro>();
-let carro = new Carro("Mustang", 5);
+const daoCar: Dao<Car> = new Dao<Car>();
+let car = new Car("Mustang", 5);
 
-console.log("== Carro:", daoCarro.insert(carro), daoCarro.update(carro));
+console.log("== Car:", daoCar.insert(car), daoCar.update(car));
